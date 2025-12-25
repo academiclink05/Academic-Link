@@ -2,53 +2,234 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>About – Academic Link Institute</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <title>About Academic Link | Tuition Institute in Raja Park Jaipur</title>
+  <meta name="description" content="Learn about Academic Link, a trusted tuition institute in Raja Park, Jaipur offering Classes 1–10 and Spoken English with personal attention.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #0A1D37;
+      padding: 10px 40px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 22px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      color: #f4b41a;
+    }
+
+    /* ABOUT SECTION */
+    .about {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .about h1 {
+      color: #0A1D37;
+      font-size: 34px;
+      margin-bottom: 20px;
+    }
+
+    .about-content {
+      display: flex;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .about-text {
+      flex: 2;
+    }
+
+    .about-text p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    .about-image {
+      flex: 1;
+    }
+
+    .about-image img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+
+    /* VALUES */
+    .values {
+      background: #f7f9fc;
+      padding: 50px 40px;
+    }
+
+    .values h2 {
+      text-align: center;
+      color: #0A1D37;
+      margin-bottom: 35px;
+    }
+
+    .value-boxes {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 25px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .value-box {
+      background: #fff;
+      padding: 25px;
+      border-radius: 6px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .value-box h3 {
+      color: #0A1D37;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+
+    .value-box p {
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0A1D37;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
+      .about-content {
+        flex-direction: column;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-  <div class="navbar">
-    <div class="brand">
-      <img src="IMG_20251223_194332.jpg" alt="Academic Link Institute logo">
-      <h1>Academic Link Institute</h1>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Academic Link">
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="classes-fees.html">Classes & Fees</a>
-      <a href="spoken-english.html">Spoken English</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="spoken.html">Spoken English</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="container">
-  <h2 class="section-title">About Academic Link Institute</h2>
-  <p class="lead">Academic Link Institute is a friendly neighbourhood coaching centre in Raja Park, Jaipur, focused on strong concepts and confidence for school students up to Class 10.</p>
-  <p class="lead">The institute offers tuition for all subjects and boards, with extra care for weak students and those shifting from Hindi to English medium.</p>
+<section class="about">
+  <h1>About Academic Link</h1>
 
-  <img src="IMG_20251221_231713.jpg" alt="Students studying at Academic Link Institute" class="about-photo">
+  <div class="about-content">
+    <div class="about-text">
+      <p>
+        Academic Link is a dedicated tuition institute based in Raja Park, Jaipur,
+        committed to providing quality education for students from Class 1 to 10.
+        We cater to CBSE, RBSE, ICSE, and Cambridge boards with a strong focus on
+        concept clarity and academic growth.
+      </p>
 
-  <div class="grid" style="margin-top:20px;">
-    <div class="card">
-      <h3>About Pujita Ahuja</h3>
-      <p>MA, B.Ed with more than seven years of teaching experience in school and coaching environments.</p>
-      <p>Believes in breaking every topic into simple steps, using real‑life examples and continuous revision so children remember what they learn.</p>
+      <p>
+        Our teaching approach emphasizes personal attention, small batch sizes,
+        and structured learning. Each student is guided according to their individual
+        learning needs to help them gain confidence and perform better academically.
+      </p>
+
+      <p>
+        Along with academic tuition, Academic Link also offers specialized Spoken
+        English classes for students, homemakers, and working professionals to
+        improve communication skills and fluency.
+      </p>
     </div>
-    <div class="card">
-      <h3>Teaching Approach</h3>
-      <p>Small batches of around three students, regular tests, homework checking and feedback to parents.</p>
-      <p>Focus on clarity of basics, written practice and stress‑free learning so students enjoy studying.</p>
+
+    <div class="about-image">
+      <img src="teacher.jpg" alt="Experienced Teacher at Academic Link">
+    </div>
+  </div>
+</section>
+
+<section class="values">
+  <h2>Our Core Values</h2>
+
+  <div class="value-boxes">
+    <div class="value-box">
+      <h3>Personal Attention</h3>
+      <p>Every student receives individual guidance to ensure proper understanding.</p>
+    </div>
+
+    <div class="value-box">
+      <h3>Concept-Based Learning</h3>
+      <p>We focus on strengthening fundamentals rather than rote memorization.</p>
+    </div>
+
+    <div class="value-box">
+      <h3>Experienced Teaching</h3>
+      <p>Teaching backed by experience across multiple boards and grade levels.</p>
+    </div>
+
+    <div class="value-box">
+      <h3>Supportive Environment</h3>
+      <p>A positive and encouraging learning atmosphere for students.</p>
     </div>
   </div>
 </section>
 
 <footer>
-  Academic Link Institute – Empowering Minds · Raja Park, Jaipur · +91 7357 970 676
+  © 2025 Academic Link | Raja Park, Jaipur
 </footer>
 
 </body>
-</html>
+  </html>
