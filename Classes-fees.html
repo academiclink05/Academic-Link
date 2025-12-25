@@ -1,100 +1,267 @@
-      <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Classes & Fees – Academic Link Institute</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <title>Classes & Fees | Academic Link Tuition Raja Park Jaipur</title>
+  <meta name="description" content="Academic Link offers tuition classes for Class 1–10 and Spoken English with affordable fees in Raja Park, Jaipur.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #0A1D37;
+      padding: 10px 40px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 22px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      color: #f4b41a;
+    }
+
+    /* PAGE */
+    .page {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .page h1 {
+      color: #0A1D37;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .page p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 30px;
+    }
+
+    /* SECTIONS */
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section h2 {
+      color: #0A1D37;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    /* CLASS BOXES */
+    .class-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+    }
+
+    .class-box {
+      border: 1px solid #e2e6ea;
+      padding: 25px;
+      border-radius: 6px;
+    }
+
+    .class-box h3 {
+      font-size: 18px;
+      color: #0A1D37;
+      margin-bottom: 10px;
+    }
+
+    .class-box ul {
+      padding-left: 18px;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* FEES TABLE */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    table th, table td {
+      border: 1px solid #e2e6ea;
+      padding: 14px;
+      text-align: center;
+      font-size: 14px;
+    }
+
+    table th {
+      background: #0A1D37;
+      color: #fff;
+      font-weight: 500;
+    }
+
+    /* NOTE */
+    .note {
+      background: #f7f9fc;
+      padding: 20px;
+      border-left: 4px solid #0A1D37;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0A1D37;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-  <div class="navbar">
-    <div class="brand">
-      <img src="IMG_20251223_194332.jpg" alt="Academic Link Institute logo">
-      <h1>Academic Link Institute</h1>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Academic Link">
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="classes-fees.html">Classes & Fees</a>
-      <a href="spoken-english.html">Spoken English</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="spoken.html">Spoken English</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="container">
-  <h2 class="section-title">Classes Offered</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Regular Tuition (1–5)</h3>
-      <p>All subjects with extra focus on reading, writing and basic maths skills for primary classes.</p>
-    </div>
-    <div class="card">
-      <h3>Regular Tuition (6–8)</h3>
-      <p>Strong foundation in Maths, Science, English, Social Studies and languages with regular worksheets.</p>
-    </div>
-    <div class="card">
-      <h3>Board Classes (9–10)</h3>
-      <p>Concept‑based teaching, previous‑year questions and revision tests to prepare for board exams.</p>
-    </div>
-    <div class="card">
-      <h3>Home Tuition</h3>
-      <p>Personal coaching at your home in Raja Park and nearby areas, ideal for focused one‑to‑one learning.</p>
+<section class="page">
+  <h1>Classes & Fees</h1>
+  <p>
+    Academic Link offers structured tuition programs with personalised attention
+    for students from Class 1 to Class 10. Classes are available in both
+    offline (Raja Park, Jaipur) and online modes.
+  </p>
+
+  <!-- CLASSES -->
+  <div class="section">
+    <h2>Classes Offered</h2>
+
+    <div class="class-grid">
+      <div class="class-box">
+        <h3>Classes 1 – 5</h3>
+        <ul>
+          <li>All Subjects</li>
+          <li>Strong foundation building</li>
+          <li>Homework support</li>
+          <li>Regular practice & revision</li>
+        </ul>
+      </div>
+
+      <div class="class-box">
+        <h3>Classes 6 – 8</h3>
+        <ul>
+          <li>English, Maths, Science</li>
+          <li>CBSE / RBSE / ICSE</li>
+          <li>Concept-based teaching</li>
+          <li>Small batch learning</li>
+        </ul>
+      </div>
+
+      <div class="class-box">
+        <h3>Classes 9 – 10</h3>
+        <ul>
+          <li>English & Core Subjects</li>
+          <li>Board exam preparation</li>
+          <li>Regular tests & feedback</li>
+          <li>Focused academic guidance</li>
+        </ul>
+      </div>
     </div>
   </div>
-</section>
 
-<section class="container">
-  <h2 class="section-title">Fee Details – Academic Link (Raja Park, Jaipur)</h2>
-  <table class="table">
-    <tr>
-      <th>Service</th>
-      <th>Mode</th>
-      <th>Fees (per month)</th>
-      <th>Notes</th>
-    </tr>
-    <tr>
-      <td>Spoken English (all age groups)</td>
-      <td>Online</td>
-      <td>₹6,000</td>
-      <td>1 hour · Alternate days · 3‑month course</td>
-    </tr>
-    <tr>
-      <td>Tuition Classes 1–10</td>
-      <td>Online</td>
-      <td>₹2,500 – ₹9,500</td>
-      <td>Depends on class & subjects</td>
-    </tr>
-    <tr>
-      <td>Tuition Classes 1–10</td>
-      <td>At Institute</td>
-      <td>₹3,500 – ₹9,500</td>
-      <td>Small batches & one‑to‑one available</td>
-    </tr>
-    <tr>
-      <td>Home Tuition (Classes 6–8)</td>
-      <td>Home visit</td>
-      <td>₹9,500 – ₹11,000</td>
-      <td>Raja Park & nearby areas</td>
-    </tr>
-    <tr>
-      <td>Home Tuition (Classes 9–10)</td>
-      <td>Home visit</td>
-      <td>₹11,000 – ₹13,500</td>
-      <td>Raja Park & nearby areas</td>
-    </tr>
-  </table>
+  <!-- FEES -->
+  <div class="section">
+    <h2>Fee Structure</h2>
 
-  <p class="lead" style="margin-top:15px;">For exact fee for your child’s class and subjects, please call or send a WhatsApp message.</p>
-  <p class="lead">Want to improve English speaking? Visit our <a href="spoken-english.html">Spoken English page</a>.</p>
-  <a href="tel:+917357970676" class="btn-primary">Call for Fee Enquiry</a>
+    <table>
+      <tr>
+        <th>Class</th>
+        <th>Mode</th>
+        <th>Monthly Fees</th>
+      </tr>
+      <tr>
+        <td>Class 1 – 5</td>
+        <td>Offline / Online</td>
+        <td>₹2,000 – ₹3,000</td>
+      </tr>
+      <tr>
+        <td>Class 6 – 8</td>
+        <td>Offline / Online</td>
+        <td>₹3,000 – ₹4,000</td>
+      </tr>
+      <tr>
+        <td>Class 9 – 10</td>
+        <td>Offline / Online</td>
+        <td>₹4,000 – ₹5,000</td>
+      </tr>
+      <tr>
+        <td>Spoken English</td>
+        <td>Online</td>
+        <td>₹6,000 / month</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="note">
+    ✔ Fees may vary depending on subjects, class frequency, and batch size.<br>
+    ✔ Personal attention and limited students per batch.<br>
+    ✔ Contact us for a detailed discussion and free counselling.
+  </div>
+
 </section>
 
 <footer>
-  Academic Link Institute – Empowering Minds · Raja Park, Jaipur · +91 7357 970 676
+  © 2025 Academic Link | Raja Park, Jaipur
 </footer>
 
 </body>
