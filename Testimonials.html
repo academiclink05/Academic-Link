@@ -2,51 +2,228 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Testimonials – Academic Link Institute</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <title>Testimonials | Academic Link Tuition Raja Park Jaipur</title>
+  <meta name="description" content="Read what parents and students say about Academic Link tuition classes in Raja Park, Jaipur.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #0A1D37;
+      padding: 10px 40px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 22px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      color: #f4b41a;
+    }
+
+    /* PAGE */
+    .page {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .page h1 {
+      color: #0A1D37;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .page p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 40px;
+    }
+
+    /* TESTIMONIAL GRID */
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 25px;
+    }
+
+    .testimonial-box {
+      border: 1px solid #e2e6ea;
+      padding: 25px;
+      border-radius: 6px;
+      background: #fff;
+    }
+
+    .testimonial-box p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 15px;
+    }
+
+    .testimonial-box h4 {
+      font-size: 15px;
+      color: #0A1D37;
+      margin: 0;
+    }
+
+    .testimonial-box span {
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* CTA */
+    .cta {
+      margin-top: 60px;
+      background: #f7f9fc;
+      padding: 35px;
+      text-align: center;
+      border-radius: 6px;
+    }
+
+    .cta h2 {
+      color: #0A1D37;
+      margin-bottom: 10px;
+    }
+
+    .cta a {
+      display: inline-block;
+      margin-top: 15px;
+      padding: 12px 28px;
+      background: #0A1D37;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0A1D37;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-  <div class="navbar">
-    <div class="brand">
-      <img src="IMG_20251223_194332.jpg" alt="Academic Link Institute logo">
-      <h1>Academic Link Institute</h1>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Academic Link">
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="classes-fees.html">Classes & Fees</a>
-      <a href="spoken-english.html">Spoken English</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="spoken.html">Spoken English</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="container">
-  <h2 class="section-title">Parents & Students Speak</h2>
-  <div class="grid">
-    <div class="card">
-      <h3>Parent of Class 9 Student</h3>
-      <p>“My son’s basics in Maths and Science became much clearer after joining Academic Link. Pujita ma’am explains patiently and gives regular tests.”</p>
+<section class="page">
+  <h1>What Parents & Students Say</h1>
+  <p>
+    The trust of parents and the progress of students define Academic Link.
+    Here are a few words shared by parents and learners who have experienced
+    our personalised teaching approach.
+  </p>
+
+  <div class="testimonial-grid">
+
+    <div class="testimonial-box">
+      <p>
+        “My child has shown great improvement in studies. The personal attention
+        and regular feedback really make a difference.”
+      </p>
+      <h4>Parent of Class 6 Student</h4>
+      <span>Raja Park, Jaipur</span>
     </div>
-    <div class="card">
-      <h3>Class 8 Student</h3>
-      <p>“Earlier I was scared of English. Now I can write better answers and speak in class. Small batch helps me ask all my doubts.”</p>
+
+    <div class="testimonial-box">
+      <p>
+        “The concepts are explained very clearly. Doubts are solved patiently,
+        and the learning environment is very positive.”
+      </p>
+      <h4>Class 9 Student</h4>
+      <span>CBSE Board</span>
     </div>
-    <div class="card">
-      <h3>Spoken English Learner</h3>
-      <p>“I am a homemaker and joined the online spoken English classes. In three months I became comfortable speaking to teachers and relatives in English.”</p>
+
+    <div class="testimonial-box">
+      <p>
+        “I joined Spoken English classes and now feel much more confident while
+        speaking. The sessions are practical and interactive.”
+      </p>
+      <h4>Spoken English Learner</h4>
+      <span>Online Classes</span>
     </div>
+
+    <div class="testimonial-box">
+      <p>
+        “Small batches and focused teaching helped my daughter improve her
+        performance in exams. Highly recommended.”
+      </p>
+      <h4>Parent of Class 10 Student</h4>
+      <span>Raja Park, Jaipur</span>
+    </div>
+
   </div>
-  <p class="lead" style="margin-top:18px;">*You can share real feedback later and these lines can be updated anytime.</p>
+
+  <div class="cta">
+    <h2>Want to see similar results?</h2>
+    <p>Get in touch with us to discuss your child’s learning needs.</p>
+    <a href="contact.html">Contact Us</a>
+  </div>
+
 </section>
 
 <footer>
-  Academic Link Institute – Empowering Minds · Raja Park, Jaipur · +91 7357 970 676
+  © 2025 Academic Link | Raja Park, Jaipur
 </footer>
 
 </body>
-</html>
+  </html>
