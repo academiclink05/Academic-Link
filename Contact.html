@@ -2,55 +2,213 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Contact – Academic Link Institute</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="style.css">
+  <title>Contact Us | Academic Link Raja Park Jaipur</title>
+  <meta name="description" content="Contact Academic Link for tuition classes and Spoken English in Raja Park, Jaipur. Call or WhatsApp for enquiries.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #ffffff;
+      color: #222;
+    }
+
+    /* NAVBAR */
+    header {
+      background: #0A1D37;
+      padding: 10px 40px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo img {
+      height: 45px;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 22px;
+      margin: 0;
+      padding: 0;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-size: 14px;
+    }
+
+    nav ul li a:hover {
+      color: #f4b41a;
+    }
+
+    /* PAGE */
+    .page {
+      padding: 60px 40px;
+      max-width: 1100px;
+      margin: auto;
+    }
+
+    .page h1 {
+      color: #0A1D37;
+      font-size: 34px;
+      margin-bottom: 15px;
+    }
+
+    .page p {
+      font-size: 15px;
+      line-height: 1.7;
+      margin-bottom: 35px;
+    }
+
+    /* CONTACT GRID */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      margin-bottom: 50px;
+    }
+
+    .contact-box {
+      border: 1px solid #e2e6ea;
+      padding: 25px;
+      border-radius: 6px;
+    }
+
+    .contact-box h2 {
+      color: #0A1D37;
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+
+    .contact-box p {
+      font-size: 14px;
+      line-height: 1.6;
+      margin-bottom: 10px;
+    }
+
+    .contact-box a {
+      color: #0A1D37;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    /* CTA BUTTONS */
+    .buttons a {
+      display: inline-block;
+      margin-right: 10px;
+      margin-top: 10px;
+      padding: 12px 22px;
+      background: #0A1D37;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+
+    /* MAP */
+    .map iframe {
+      width: 100%;
+      height: 350px;
+      border: none;
+      border-radius: 6px;
+    }
+
+    /* FOOTER */
+    footer {
+      background: #0A1D37;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 13px;
+    }
+
+    /* MOBILE */
+    @media(max-width: 768px) {
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 12px;
+      }
+    }
+  </style>
 </head>
+
 <body>
 
 <header>
-  <div class="navbar">
-    <div class="brand">
-      <img src="IMG_20251223_194332.jpg" alt="Academic Link Institute logo">
-      <h1>Academic Link Institute</h1>
+  <nav>
+    <div class="logo">
+      <img src="logo.png" alt="Academic Link">
     </div>
-    <nav class="nav-links">
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="classes-fees.html">Classes & Fees</a>
-      <a href="spoken-english.html">Spoken English</a>
-      <a href="testimonials.html">Testimonials</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="courses.html">Courses</a></li>
+      <li><a href="fees.html">Fees</a></li>
+      <li><a href="spoken.html">Spoken English</a></li>
+      <li><a href="testimonials.html">Testimonials</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
 </header>
 
-<section class="container">
-  <h2 class="section-title">Contact & Enquiry</h2>
-  <div class="contact-box">
-    <div class="contact-details">
-      <p><strong>Phone / WhatsApp:</strong> +91 7357 970 676</p>
+<section class="page">
+  <h1>Contact Us</h1>
+  <p>
+    Get in touch with Academic Link for admissions, course details,
+    or counselling. We’ll be happy to guide you.
+  </p>
+
+  <div class="contact-grid">
+
+    <div class="contact-box">
+      <h2>Institute Address</h2>
+      <p>Academic Link</p>
+      <p>Raja Park, Jaipur, Rajasthan</p>
+      <p><strong>Classes:</strong> Offline & Online</p>
+    </div>
+
+    <div class="contact-box">
+      <h2>Call or WhatsApp</h2>
+      <p><strong>Phone:</strong> <a href="tel:+91 7357 970 676">+91 7357 970 676</a></p>
       <p><strong>Email:</strong> academiclinkins@gmail.com</p>
-      <p><strong>Location:</strong> Raja Park, Jaipur (exact address shared on enquiry)</p>
-      <p><strong>Boards:</strong> CBSE · RBSE · ICSE · Cambridge</p>
-      <p><strong>Note:</strong> Hindi medium students are welcome.</p>
-      <p>Kindly call or message to check current batch timings and seat availability.</p>
+
+      <div class="buttons">
+        <a href="https://wa.me/91 7357970676" target="_blank">WhatsApp Now</a>
+        <a href="tel:+91 7357970676">Call Now</a>
+      </div>
     </div>
-    <div class="contact-form">
-      <form>
-        <input type="text" placeholder="Parent / Student Name">
-        <input type="text" placeholder="Class & Board (e.g., 8 CBSE)">
-        <input type="tel" placeholder="Phone / WhatsApp Number">
-        <textarea rows="4" placeholder="Your message or enquiry"></textarea>
-        <button type="submit" class="btn-primary">Submit (sample form)</button>
-      </form>
-      <p style="font-size:0.85rem; margin-top:6px;">Form is for display; you can collect enquiries through call or WhatsApp.</p>
+
+    <div class="contact-box">
+      <h2>Class Timings</h2>
+      <p>Monday – Saturday</p>
+      <p>Morning & Evening Batches</p>
+      <p>Sunday: By Appointment</p>
     </div>
+
   </div>
+
+  <div class="map">
+    <iframe 
+      src="https://www.google.com/maps?q=Raja%20Park%20Jaipur&output=embed"
+      loading="lazy">
+    </iframe>
+  </div>
+
 </section>
 
 <footer>
-  Academic Link Institute – Empowering Minds · Raja Park, Jaipur · +91 7357 970 676
+  © 2025 Academic Link | Raja Park, Jaipur
 </footer>
 
 </body>
