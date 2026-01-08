@@ -293,3 +293,21 @@ section h2::after {
     max-width: 260px;
   }
 }
+/* FLOATING WHATSAPP BUTTON */
+.whatsapp-float {
+  position: fixed;
+  bottom: 22px;
+  right: 22px;
+  background: #25D366;
+  color: #ffffff;
+  font-size: 22px;
+  padding: 14px 16px;
+  border-radius: 50%;
+  text-decoration: none;
+  box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+  z-index: 999;
+}
+
+.whatsapp-float:hover {
+  background: #1ebe5d;
+}
