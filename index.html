@@ -3,7 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Academic Link | Tuition Classes in Raja Park Jaipur</title>
- <meta name="google-site-verification" content="LTQgmfE8sAvHQYTuk8_00tbNdt_Lmj8fVxG0FMTwfhg" /><meta name="description" content="Academic Link offers tuition classes for Class 1–10 (CBSE, RBSE, ICSE, Cambridge) and Spoken English in Raja Park, Jaipur.">
+
+  <meta name="google-site-verification" content="LTQgmfE8sAvHQYTuk8_00tbNdt_Lmj8fVxG0FMTwfhg">
+  <meta name="description" content="Academic Link offers tuition classes for Class 1–10 (CBSE, RBSE, ICSE, Cambridge) and Spoken English in Raja Park, Jaipur.">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Font -->
@@ -86,9 +88,10 @@
       font-size: 14px;
     }
 
-    .hero img {
+    .hero-image img {
       max-width: 380px;
       border-radius: 8px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.12);
     }
 
     /* FEATURES */
@@ -128,7 +131,7 @@
     }
 
     /* MOBILE */
-    @media(max-width: 768px) {
+    @media (max-width: 768px) {
       .hero {
         flex-direction: column;
         text-align: center;
@@ -139,6 +142,10 @@
         justify-content: center;
         gap: 12px;
       }
+
+      .hero-image img {
+        max-width: 90%;
+      }
     }
   </style>
 </head>
@@ -148,7 +155,7 @@
 <header>
   <nav>
     <div class="logo">
-      <img src="IMG_20251223_194332.jpg" alt="Academic Link">
+      <img src="IMG_20251223_194332.jpg" alt="Academic Link Logo">
     </div>
     <ul>
       <li><a href="index.html">Home</a></li>
@@ -161,6 +168,8 @@
     </ul>
   </nav>
 </header>
+
+<!-- HERO SECTION -->
 <section class="hero">
   <div class="hero-text">
     <h1>Trusted Tuition in Raja Park, Jaipur</h1>
@@ -169,32 +178,42 @@
       for students from Class 1 to 10.
     </p>
 
-    <a href="https://wa.me/91XXXXXXXXXX?text=I%20want%20to%20enquire%20about%20tuition%20classes"
-       target="_blank"
-       class="btn">
+    <a href="https://wa.me/917357970676?text=I%20want%20to%20enquire%20about%20tuition%20classes"
+       target="_blank">
       Enroll via WhatsApp
     </a>
   </div>
 
   <div class="hero-image">
-    <img src="IMG_20260109_031106.jpg"
-         alt="Child studying with focus at Academic Link">
+    <img src="IMG_20260109_031106.jpg" alt="Child studying with focus at Academic Link">
   </div>
 </section>
-<section class="hero">
-  <div class="hero-text">
-    <h1>Academic Link – Trusted Tuition in Raja Park, Jaipur</h1>
-    <p>
-      Academic Link provides quality tuition classes for students from Class 1 to 10
-      across CBSE, RBSE, ICSE, and Cambridge boards. We focus on concept clarity,
-      personal attention, and academic excellence.
-    </p>
-    <a href="contact.html">Enroll Now</a>
+<!-- WHY ACADEMIC LINK -->
+<section class="why-academic">
+  <h2>Why Academic Link?</h2>
+
+  <div class="why-content">
+    <div class="why-text">
+      <p>
+        Every child deserves personal attention and a calm learning space.
+        At Academic Link, we focus on understanding each student’s needs,
+        building confidence, and strengthening core concepts.
+      </p>
+
+      <ul>
+        <li>✔ Small batches for better focus</li>
+        <li>✔ Personal guidance for every child</li>
+        <li>✔ Friendly and stress-free learning</li>
+      </ul>
+    </div>
+
+    <div class="why-image">
+      <img src="file_00000000e3347206bbe858fefcce89b6.png"
+           alt="Why Academic Link - fun and friendly learning environment">
+    </div>
   </div>
-
-  <img src="classroom.jpg" alt="Academic Link Classroom">
 </section>
-
+<!-- FEATURES -->
 <section class="features">
   <div class="feature-box">
     <h3>Small Batch Teaching</h3>
@@ -217,6 +236,7 @@
   </div>
 </section>
 
+<!-- FOOTER -->
 <footer>
   © 2025 Academic Link | Raja Park, Jaipur
 </footer>
