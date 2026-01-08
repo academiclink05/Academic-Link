@@ -230,4 +230,8 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+
+  .hero-image img {
+    max-width: 90%;
+  }
 }
