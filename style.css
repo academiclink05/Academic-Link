@@ -235,3 +235,20 @@ footer {
     max-width: 90%;
   }
 }
+/* SECTION HEADINGS – make them stand out */
+section h2 {
+  font-size: 28px;
+  color: #0A1D37;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+section h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #f4b41a;
+  margin-top: 8px;
+  border-radius: 2px;
+}
