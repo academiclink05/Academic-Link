@@ -272,3 +272,24 @@ section h2::after {
     max-width: 260px;
   }
 }
+/* WHY ACADEMIC LINK – SMALL, CALM, ON-BRAND */
+.why-cover {
+  text-align: center;
+  margin: 24px 0 32px;
+}
+
+.why-cover img {
+  max-width: 360px;     /* similar to hero image */
+  width: 100%;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+  filter: saturate(0.85) brightness(0.98); /* tone down colours */
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why-cover img {
+    max-width: 260px;
+  }
+}
