@@ -252,41 +252,23 @@ section h2::after {
   margin-top: 8px;
   border-radius: 2px;
 }
-/* --------------------
-   WHY ACADEMIC LINK
----------------------*/
-.why-academic {
-  padding: 50px 40px;
+/* WHY ACADEMIC LINK – SMALL IMAGE */
+.why-cover {
+  text-align: center;
+  margin: 25px 0 35px;
 }
 
-.why-content {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-  max-width: 1100px;
-  margin: auto;
-}
-
-.why-text ul {
-  padding-left: 18px;
-  margin-top: 15px;
-}
-
-.why-image img {
-  max-width: 320px;
-  border-radius: 18px;
-  box-shadow: 0 10px 20px rgba(0,0,0,0.12);
-  transform: rotate(-1deg);
+.why-cover img {
+  max-width: 380px;   /* similar to hero image */
+  width: 100%;
+  height: auto;
+  border-radius: 16px;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.12);
 }
 
 /* Mobile */
 @media (max-width: 768px) {
-  .why-content {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .why-image img {
+  .why-cover img {
     max-width: 260px;
   }
-   }
+}
