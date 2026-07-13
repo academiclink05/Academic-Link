@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rooms & Facilities | Academic Link Girls' PG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root { --navy: #1d3557; --sand: #fefae0; --soft-brown: #b07d62; --text: #4a4a4a; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; background: var(--sand); color: var(--text); line-height: 1.7; }
+    
+    header { background: var(--navy); color: white; padding: 20px; }
+    .nav-container { max-width: 1050px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+    
+    .section { max-width: 1050px; margin: auto; padding: 50px 20px; }
+    .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .room-image { width: 100%; border-radius: 30px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+    
+    .card { background: white; padding: 30px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); margin-bottom: 20px; }
+    .room-types { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    
+    .btn { background: #25d366; color: white; padding: 12px 25px; border-radius: 50px; font-weight: 600; display: inline-block; margin-top: 15px; text-decoration: none; }
+    
+    @media (max-width: 768px) { .two-column, .room-types { grid-template-columns: 1fr; } }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <h1>Rooms & Facilities</h1>
+      <nav><a href="index.html" style="color:white;">Home</a> | <a href="about.html" style="color:white;">About</a></nav>
+    </div>
+  </header>
+
+  <section class="section">
+    <div class="two-column">
+      <div>
+        <h2>Comfort & Convenience</h2>
+        <p style="margin-top: 15px;">Each room is designed to provide a peaceful environment for study and rest. Featuring AC, comfortable beds, and dedicated storage for every resident.</p>
+        <div style="margin-top: 20px;">
+          <p><strong>Room Features:</strong></p>
+          <ul style="margin-left: 20px;">
+            <li>AC & Ceiling Fan</li>
+            <li>Single bed with mattress</li>
+            <li>Personal wardrobe & storage</li>
+            <li>Attached private washroom</li>
+          </ul>
+        </div>
+      </div>
+      <img src="file_0000000008547208b13514ceec1e9e70.png" alt="PG Room View" class="room-image">
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="room-types">
+      <div class="card">
+        <h3>Sharing Rooms</h3>
+        <p>Comfortable 2-3 girl sharing.</p>
+        <p style="font-weight: 700; margin-top: 10px;">Rent: ₹13,000/mo (Excl. food)</p>
+      </div>
+      <div class="card">
+        <h3>Full Service</h3>
+        <p>Includes food arrangements.</p>
+        <p style="font-weight: 700; margin-top: 10px;">Rent: ₹15,500/mo (Incl. food)</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="text-align:center;">
+    <div class="card">
+      <h3>Ready to Move In?</h3>
+      <p>Contact us to confirm availability and schedule a visit.</p>
+      <a href="https://wa.me/917357970676" class="btn">Chat on WhatsApp</a>
+    </div>
+  </section>
+
+</body>
+</html>
