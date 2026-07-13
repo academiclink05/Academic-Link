@@ -3,355 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rooms & Facilities | Academic Link Girls' PG – Raja Park, Jaipur</title>
-
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-
+  <title>Rooms & Facilities | Academic Link Girls' PG</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: "Poppins", Arial, sans-serif;
-      background: #f5f7fb;
-      color: #1f2a37;
-      line-height: 1.7;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    header {
-      background: #0d2340;
-      color: white;
-      padding: 14px 20px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.08);
-    }
-
-    .top-bar {
-      max-width: 1050px;
-      margin: auto;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 16px;
-    }
-
-    .brand {
-      display: flex;
-      flex-direction: column;
-      gap: 3px;
-    }
-
-    .brand h1 {
-      font-size: 22px;
-    }
-
-    .brand p {
-      font-size: 13px;
-      color: #d9e3f0;
-    }
-
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 16px;
-      font-size: 14px;
-    }
-
-    nav a {
-      color: #e5edf7;
-      font-weight: 500;
-    }
-
-    nav a:hover {
-      text-decoration: underline;
-    }
-
-    .page-hero {
-      background: linear-gradient(180deg, #ffffff 0%, #eef4fb 100%);
-      padding: 32px 20px 24px;
-    }
-
-    .page-hero-inner {
-      max-width: 1050px;
-      margin: auto;
-    }
-
-    .page-hero h2 {
-      font-size: 30px;
-      color: #0d2340;
-      margin-bottom: 10px;
-    }
-
-    .page-hero p {
-      max-width: 760px;
-      color: #4b5563;
-      font-size: 16px;
-    }
-
-    .section {
-      max-width: 1050px;
-      margin: auto;
-      padding: 32px 20px;
-    }
-
-    .section h3 {
-      font-size: 26px;
-      color: #0d2340;
-      margin-bottom: 10px;
-    }
-
-    .section p {
-      color: #4b5563;
-      font-size: 16px;
-      margin-bottom: 12px;
-    }
-
-    .card-box {
-      background: white;
-      padding: 22px;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-      margin-top: 18px;
-    }
-
-    .two-column {
-      display: grid;
-      grid-template-columns: 1.4fr 1fr;
-      gap: 24px;
-      align-items: start;
-    }
-
-    .room-image {
-      width: 100%;
-      border-radius: 16px;
-      box-shadow: 0 8px 22px rgba(0,0,0,0.12);
-      object-fit: cover;
-    }
-
-    .room-types {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 18px;
-      margin-top: 18px;
-    }
-
-    .room-card {
-      background: white;
-      padding: 18px 18px 16px;
-      border-radius: 14px;
-      box-shadow: 0 6px 18px rgba(0,0,0,0.06);
-    }
-
-    .room-card h4 {
-      font-size: 18px;
-      color: #0d2340;
-      margin-bottom: 6px;
-    }
-
-    .room-card p {
-      font-size: 15px;
-      color: #4b5563;
-      margin-bottom: 6px;
-    }
-
-    ul {
-      padding-left: 20px;
-      color: #374151;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .highlight {
-      font-weight: 600;
-      color: #0d2340;
-    }
-
-    .btn {
-      display: inline-block;
-      background: #25d366;
-      color: white;
-      padding: 11px 22px;
-      border-radius: 10px;
-      font-weight: 700;
-      font-size: 15px;
-      margin-top: 12px;
-      box-shadow: 0 5px 14px rgba(37,211,102,0.25);
-    }
-
-    footer {
-      background: #0d2340;
-      color: white;
-      text-align: center;
-      padding: 18px 16px;
-      margin-top: 10px;
-      font-size: 14px;
-    }
-
-    @media (max-width: 900px) {
-      .two-column {
-        grid-template-columns: 1fr;
-      }
-
-      .room-types {
-        grid-template-columns: 1fr;
-      }
-    }
-
-    @media (max-width: 600px) {
-      .brand h1 {
-        font-size: 20px;
-      }
-
-      .page-hero h2 {
-        font-size: 26px;
-      }
-
-      .section h3 {
-        font-size: 22px;
-      }
-
-      .section p,
-      li,
-      .room-card p {
-        font-size: 15px;
-      }
-    }
+    :root { --navy: #1d3557; --sand: #fefae0; --soft-brown: #b07d62; --text: #4a4a4a; }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: 'Poppins', sans-serif; background: var(--sand); color: var(--text); line-height: 1.7; }
+    
+    header { background: var(--navy); color: white; padding: 20px; }
+    .nav-container { max-width: 1050px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+    
+    .section { max-width: 1050px; margin: auto; padding: 50px 20px; }
+    .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+    .room-image { width: 100%; border-radius: 30px; box-shadow: 0 15px 30px rgba(0,0,0,0.1); }
+    
+    .card { background: white; padding: 30px; border-radius: 25px; box-shadow: 0 10px 25px rgba(0,0,0,0.05); margin-bottom: 20px; }
+    .room-types { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+    
+    .btn { background: #25d366; color: white; padding: 12px 25px; border-radius: 50px; font-weight: 600; display: inline-block; margin-top: 15px; text-decoration: none; }
+    
+    @media (max-width: 768px) { .two-column, .room-types { grid-template-columns: 1fr; } }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="top-bar">
-      <div class="brand">
-        <h1>Academic Link Girls' PG</h1>
-        <p>Safe, peaceful and family-managed stay in Raja Park, Jaipur</p>
-      </div>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="rooms.html">Rooms & Facilities</a></li>
-        </ul>
-      </nav>
+    <div class="nav-container">
+      <h1>Rooms & Facilities</h1>
+      <nav><a href="index.html" style="color:white;">Home</a> | <a href="about.html" style="color:white;">About</a></nav>
     </div>
   </header>
-
-  <section class="page-hero">
-    <div class="page-hero-inner">
-      <h2>Rooms & Facilities</h2>
-      <p>
-        Academic Link Girls' PG offers neat, air-conditioned rooms with attached washrooms and all basic furniture.
-        Rooms are ideal for 2–3 girls and are maintained daily for cleanliness and comfort.
-      </p>
-    </div>
-  </section>
 
   <section class="section">
     <div class="two-column">
       <div>
-        <h3>Room Setup</h3>
-        <p>
-          Each room is designed to give every girl her own space and comfort while sharing the room with others.
-          Every girl gets a single bed and basic furniture so that daily living and study time stay organised.
-        </p>
-
-        <div class="card-box">
-          <p><span class="highlight">Per girl, the room includes:</span></p>
-          <ul>
-            <li>Single bed with mattress.</li>
-            <li>Wardrobe / storage space.</li>
-            <li>Study table and chair.</li>
-          </ul>
-          <p><span class="highlight">Room features:</span></p>
-          <ul>
-            <li>2–3 girls per room.</li>
-            <li>Fan and AC in room.</li>
-            <li>Attached washroom with the room.</li>
+        <h2>Comfort & Convenience</h2>
+        <p style="margin-top: 15px;">Each room is designed to provide a peaceful environment for study and rest. Featuring AC, comfortable beds, and dedicated storage for every resident.</p>
+        <div style="margin-top: 20px;">
+          <p><strong>Room Features:</strong></p>
+          <ul style="margin-left: 20px;">
+            <li>AC & Ceiling Fan</li>
+            <li>Single bed with mattress</li>
+            <li>Personal wardrobe & storage</li>
+            <li>Attached private washroom</li>
           </ul>
         </div>
       </div>
-
-      <div>
-        <img src="file_0000000008547208b13514ceec1e9e70.png"
-             alt="Room view of Academic Link Girls' PG"
-             class="room-image">
-      </div>
+      <img src="file_0000000008547208b13514ceec1e9e70.png" alt="PG Room View" class="room-image">
     </div>
   </section>
 
   <section class="section">
-    <h3>Room Options & Rent</h3>
-
     <div class="room-types">
-      <div class="room-card">
-        <h4>Sharing Rooms (2–3 girls)</h4>
-        <p>Comfortable shared rooms suitable for college and coaching students.</p>
-        <p><span class="highlight">Rent (excluding food):</span> From ₹13,000 per month*.</p>
+      <div class="card">
+        <h3>Sharing Rooms</h3>
+        <p>Comfortable 2-3 girl sharing.</p>
+        <p style="font-weight: 700; margin-top: 10px;">Rent: ₹13,000/mo (Excl. food)</p>
       </div>
-      <div class="room-card">
-        <h4>With Food Facility</h4>
-        <p>For girls who prefer stay with food arrangement.</p>
-        <p><span class="highlight">Rent (including food):</span> From ₹15,500 per month*.</p>
+      <div class="card">
+        <h3>Full Service</h3>
+        <p>Includes food arrangements.</p>
+        <p style="font-weight: 700; margin-top: 10px;">Rent: ₹15,500/mo (Incl. food)</p>
       </div>
     </div>
-
-    <div class="card-box">
-      <p style="font-size: 14px; color:#6b7280;">
-        *Final rent and availability may vary based on room type and current occupancy.  
-        Please confirm the latest details on WhatsApp.
-      </p>
-      <a href="https://wa.me/917357970676" class="btn" target="_blank">Check Availability on WhatsApp</a>
-    </div>
   </section>
 
-  <section class="section">
-    <h3>Facilities & Safety</h3>
-    <div class="card-box">
-      <p>
-        The PG is managed with personal attention to safety, discipline and cleanliness.
-        It is suitable for girls and parents who want a secure and homely environment in Jaipur.
-      </p>
-      <ul>
-        <li>Managed by a mother and daughter.</li>
-        <li>Girls-only accommodation – <span class="highlight">no boys allowed inside rooms</span>.</li>
-        <li>Society guard for entry and basic security.</li>
-        <li>24×7 CCTV surveillance in common areas.</li>
-        <li>Daily room cleaning to maintain hygiene.</li>
-        <li>Wi‑Fi available for students and working girls.</li>
-      </ul>
+  <section class="section" style="text-align:center;">
+    <div class="card">
+      <h3>Ready to Move In?</h3>
+      <p>Contact us to confirm availability and schedule a visit.</p>
+      <a href="https://wa.me/917357970676" class="btn">Chat on WhatsApp</a>
     </div>
   </section>
-
-  <section class="section">
-    <h3>Want to Know More?</h3>
-    <div class="card-box">
-      <p>
-        For detailed information about food plans, timings, PG rules and to schedule a visit,
-        please contact us directly on WhatsApp. We are happy to guide both students and parents.
-      </p>
-      <a href="https://wa.me/917357970676" class="btn" target="_blank">Chat on WhatsApp</a>
-    </div>
-  </section>
-
-  <footer>
-    © 2026 Academic Link Girls' PG | Raja Park, Jaipur | WhatsApp: +91 73579 70676
-  </footer>
 
 </body>
 </html>
