@@ -12,6 +12,7 @@
     
     header { background: var(--navy); color: white; padding: 20px; }
     .nav-container { max-width: 1050px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white !important; font-weight: 500; margin-left: 15px; text-decoration: none; font-size: 14px; }
     
     .section { max-width: 1050px; margin: auto; padding: 50px 20px; }
     .two-column { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
@@ -22,7 +23,10 @@
     
     .btn { background: #25d366; color: white; padding: 12px 25px; border-radius: 50px; font-weight: 600; display: inline-block; margin-top: 15px; text-decoration: none; }
     
-    @media (max-width: 768px) { .two-column, .room-types { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { 
+      .two-column, .room-types { grid-template-columns: 1fr; } 
+      .nav-container { flex-direction: column; gap: 10px; }
+    }
   </style>
 </head>
 <body>
@@ -30,7 +34,11 @@
   <header>
     <div class="nav-container">
       <h1>Rooms & Facilities</h1>
-      <nav><a href="index.html" style="color:white;">Home</a> | <a href="about.html" style="color:white;">About</a></nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+      </nav>
     </div>
   </header>
 
