@@ -1,76 +1,84 @@
-<style>
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+:root {
+  --navy: #14213d;
+  --sand: #f7f4ef;
+  --soft-brown: #b07d62;
+  --text: #2f2a26;
+  --text-light: #6b625c;
+  --card-bg: #fffdf9;
+  --border-color: #efe7de;
+}
 
-  body {
-    font-family: "Poppins", Arial, sans-serif;
-    background: #f7f4ef;
-    color: #2f2a26;
-    line-height: 1.7;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
-  header {
-    background: #14213d;
-    color: white;
-    box-shadow: 0 4px 14px rgba(20, 33, 61, 0.12);
-  }
+body {
+  font-family: "Poppins", Arial, sans-serif;
+  background: var(--sand);
+  color: var(--text);
+  line-height: 1.7;
+}
 
-  .hero {
-    background: linear-gradient(180deg, #fffdf9 0%, #f5efe8 100%);
-  }
+header {
+  background: var(--navy);
+  color: white;
+  padding: 20px;
+}
 
-  .brand p,
-  nav a {
-    color: #f1ebe4;
-  }
+.nav-container {
+  max-width: 1050px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  .hero-text h2,
-  .section-title h3,
-  .card h4,
-  .price-box h4,
-  .section h3 {
-    color: #14213d;
-  }
+nav a {
+  color: #f1ebe4 !important;
+  font-weight: 500;
+  margin-left: 15px;
+  text-decoration: none;
+  font-size: 14px;
+}
 
-  .hero-text p,
-  .section-title p,
-  .card p,
-  .price-box p,
-  .section p,
-  .info-band p,
-  .safety-item,
-  .cta-box p {
-    color: #6b625c;
-  }
+.section {
+  max-width: 1050px;
+  margin: auto;
+  padding: 50px 20px;
+}
 
-  .card,
-  .price-box,
-  .info-band,
-  .safety-item,
-  .about-card,
-  .info-box {
-    background: #fffdf9;
-    border-radius: 18px;
-    box-shadow: 0 8px 24px rgba(76, 61, 51, 0.08);
-    border: 1px solid #efe7de;
-  }
+.card {
+  background: var(--card-bg);
+  padding: 30px;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(76, 61, 51, 0.08);
+  border: 1px solid var(--border-color);
+}
 
-  .btn {
-    background: #b07d62;
-    color: white;
-    box-shadow: 0 6px 16px rgba(176, 125, 98, 0.22);
-  }
+h2, h3, h4 {
+  color: var(--navy);
+}
 
-  .cta-box {
-    background: #14213d;
-    color: white;
-  }
+p {
+  color: var(--text-light);
+}
 
-  footer {
-    background: #14213d;
-    color: white;
+.btn {
+  background: var(--soft-brown);
+  color: white;
+  padding: 12px 25px;
+  border-radius: 50px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  box-shadow: 0 6px 16px rgba(176, 125, 98, 0.22);
+}
+
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    gap: 10px;
   }
-</style>
+}
