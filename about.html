@@ -4,57 +4,349 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About Academic Link Girls' PG – Girls PG in Raja Park, Jaipur</title>
+  <meta name="description" content="About Academic Link Girls' PG in Raja Park, Jaipur. Safe girls-only accommodation managed by a mother and daughter with CCTV, guard security, AC rooms and daily cleaning." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
   <style>
-    * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: "Poppins", Arial, sans-serif; background: #f7f4ef; color: #2f2a26; line-height: 1.7; }
-    a { text-decoration: none; color: inherit; }
-    img { max-width: 100%; display: block; }
-    header { background: #14213d; color: white; padding: 14px 20px; }
-    .nav-bar { max-width: 1050px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
-    .hero { max-width: 1050px; margin: auto; padding: 40px 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 28px; align-items: center; }
-    .hero-image { width: 100%; border-radius: 18px; box-shadow: 0 10px 24px rgba(0,0,0,0.12); }
-    .section { max-width: 1050px; margin: auto; padding: 34px 20px; }
-    .about-card { background: #fffdf9; border-radius: 18px; padding: 24px; border: 1px solid #efe7de; }
-    .cta-box { background: #14213d; color: white; border-radius: 18px; padding: 28px; text-align: center; }
-    .btn { display: inline-block; background: #b07d62; color: white; padding: 11px 22px; border-radius: 10px; font-weight: 700; margin-top: 15px; }
-    @media (max-width: 900px) { .hero { grid-template-columns: 1fr; } }
+    :root {
+      --navy: #1d3557;
+      --sand: #fefae0;
+      --soft-brown: #b07d62;
+      --cream: #fffdf9;
+      --text: #4a4a4a;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "Poppins", Arial, sans-serif;
+      background: var(--sand);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    header {
+      background: var(--navy);
+      color: white;
+      padding: 20px;
+      box-shadow: 0 4px 14px rgba(20, 33, 61, 0.12);
+    }
+
+    .nav-container {
+      max-width: 1050px;
+      margin: auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+    }
+
+    .brand {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+
+    .brand h1 {
+      font-size: 22px;
+      margin: 0;
+    }
+
+    .brand p {
+      font-size: 13px;
+      color: #f1ebe4;
+      margin: 0;
+    }
+
+    nav {
+      font-size: 14px;
+    }
+
+    nav a {
+      color: white !important;
+      font-weight: 500;
+      margin-left: 15px;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      max-width: 1050px;
+      margin: 40px auto;
+      padding: 20px;
+    }
+
+    .hero-inner {
+      display: grid;
+      grid-template-columns: 1.05fr 1fr;
+      gap: 40px;
+      align-items: center;
+    }
+
+    .hero-text h2 {
+      font-size: 38px;
+      color: var(--navy);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      color: var(--text);
+      font-size: 16px;
+      margin-bottom: 12px;
+      max-width: 560px;
+    }
+
+    .hero-image {
+      width: 100%;
+      border-radius: 30px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      object-fit: cover;
+    }
+
+    .section {
+      max-width: 1050px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    .section h3 {
+      font-size: 28px;
+      color: var(--navy);
+      margin-bottom: 14px;
+    }
+
+    .about-card {
+      background: white;
+      border-radius: 25px;
+      padding: 35px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .about-card p {
+      font-size: 16px;
+      margin-bottom: 14px;
+      color: var(--text);
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 25px;
+      margin-top: 30px;
+    }
+
+    .info-box {
+      background: white;
+      border-radius: 25px;
+      padding: 25px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    }
+
+    .info-box h4 {
+      font-size: 19px;
+      color: var(--navy);
+      margin-bottom: 10px;
+    }
+
+    .info-box p {
+      font-size: 15px;
+      color: var(--text);
+    }
+
+    .highlight {
+      font-weight: 700;
+      color: var(--navy);
+    }
+
+    .cta-box {
+      background: var(--navy);
+      color: white;
+      border-radius: 25px;
+      padding: 35px 24px;
+      text-align: center;
+      margin-top: 12px;
+    }
+
+    .cta-box h3 {
+      color: white;
+      margin-bottom: 10px;
+      font-size: 28px;
+    }
+
+    .cta-box p {
+      color: #e8ddd3;
+      margin-bottom: 16px;
+      font-size: 16px;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--soft-brown);
+      color: white;
+      padding: 12px 26px;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 15px;
+      box-shadow: 0 6px 16px rgba(176, 125, 98, 0.22);
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background: #8a624d;
+    }
+
+    footer {
+      text-align: center;
+      padding: 40px;
+      color: var(--navy);
+      font-size: 14px;
+    }
+
+    @media (max-width: 900px) {
+      .hero-inner,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .hero-text h2 {
+        font-size: 30px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .nav-container {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+      }
+      nav {
+        text-align: center;
+      }
+      nav a {
+        margin: 0 8px;
+      }
+    }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="nav-bar">
-      <h1>Academic Link Girls' PG</h1>
+    <div class="nav-container">
+      <div class="brand">
+        <h1>Academic Link Girls' PG</h1>
+        <p>Safe, peaceful and family-managed stay in Raja Park, Jaipur</p>
+      </div>
       <nav>
-        <a href="index.html">Home</a> | <a href="about.html">About</a> | <a href="rooms.html">Rooms</a>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
       </nav>
     </div>
   </header>
 
   <section class="hero">
-    <div>
-      <h2>About Academic Link Girls' PG</h2>
-      <p>A safe, clean, and comfortable stay for girls in Raja Park, Jaipur. Managed with personal care and a family-friendly environment.</p>
-    </div>
-    <div>
-      <img src="file_0000000008547208b13514ceec1e9e70.png" alt="Room Overview" class="hero-image">
+    <div class="hero-inner">
+      <div class="hero-text">
+        <h2>About Academic Link Girls' PG</h2>
+        <p>
+          Academic Link Girls' PG offers a safe, clean and comfortable stay for girls in Raja Park, Jaipur.
+          It is a girls-only PG managed with personal care, discipline and a family-friendly environment.
+        </p>
+        <p>
+          Our aim is to provide a peaceful place where students and working women can stay with comfort, security and confidence.
+        </p>
+      </div>
+
+      <div>
+        <!-- Uses your exact first image name -->
+        <img src="file_0000000008547208b13514ceec1e9e70.png" alt="About Academic Link Girls PG" class="hero-image">
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="about-card">
       <h3>Who We Are</h3>
-      <p>We provide secure accommodation for students and working women, run by a mother and daughter team.</p>
-      <img src="file_0000000098b07208b2c65adbb9d6ec61.png" alt="Cupboard and Mirror" style="margin-top:20px; border-radius:18px;">
+      <p>
+        Academic Link Girls' PG is a secure accommodation option for students and working women who want a peaceful and well-managed place to stay.
+        The PG is run by a <span class="highlight">mother and daughter team</span>, which gives residents a more personal, caring and homely environment.
+      </p>
+      <p>
+        Our focus is on safety, cleanliness and comfort so that every girl can stay with confidence.
+        The location in Raja Park makes daily life convenient, with nearby markets, transport and essential services.
+      </p>
+      <!-- Uses your exact second image name -->
+      <img src="file_0000000098b07208b2c65adbb9d6ec61.png" alt="PG Storage Setup" class="hero-image" style="margin-top: 25px;">
+    </div>
+
+    <div class="grid">
+      <div class="info-box">
+        <h4>Safe Environment</h4>
+        <p>
+          The PG is girls-only, with <span class="highlight">no boys allowed inside the room</span>.
+          The property also has society guard support and 24x7 CCTV surveillance for added security.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>Family Management</h4>
+        <p>
+          Managed by a mother and daughter, the PG maintains a disciplined and respectful atmosphere.
+          This creates a more comfortable and trustworthy living experience for residents and parents.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>Clean & Comfortable Stay</h4>
+        <p>
+          Rooms are maintained with daily cleaning and essential furniture for easy living.
+          Wi-Fi is available, and the setup is suitable for study, rest and daily routine.
+        </p>
+      </div>
+
+      <div class="info-box">
+        <h4>Ideal For</h4>
+        <p>
+          This PG is suitable for college students, coaching students and working women looking for a calm and secure stay in Jaipur.
+          It is especially useful for girls who want a neat, family-managed place in Raja Park.
+        </p>
+      </div>
     </div>
   </section>
 
   <section class="section">
     <div class="cta-box">
-      <h3>Interested in a stay?</h3>
+      <h3>Looking for a safe girls' PG in Raja Park?</h3>
+      <p>
+        Contact Academic Link Girls' PG for room availability, rent details and visit enquiries.
+      </p>
       <a href="https://wa.me/917357970676" class="btn">Enquire on WhatsApp</a>
     </div>
   </section>
+
+  <footer>
+    Academic Link Girls' PG · Raja Park, Jaipur
+  </footer>
 
 </body>
 </html>
