@@ -4,36 +4,31 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Academic Link Girls' PG | Boutique Stay in Raja Park</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
-    :root {
-      --navy: #1d3557;
-      --sand: #fefae0;
-      --soft-brown: #b07d62;
-      --cream: #fffdf9;
-      --text: #4a4a4a;
-    }
+    :root { --navy: #1d3557; --sand: #fefae0; --soft-brown: #b07d62; --text: #4a4a4a; }
     * { box-sizing: border-box; margin: 0; padding: 0; }
-    body { font-family: 'Poppins', sans-serif; background: var(--sand); color: var(--text); line-height: 1.6; }
+    body { font-family: 'Poppins', sans-serif; background: var(--sand); color: var(--text); line-height: 1.7; }
     
-    /* Header */
     header { background: var(--navy); color: white; padding: 20px; }
     .nav-container { max-width: 1050px; margin: auto; display: flex; justify-content: space-between; align-items: center; }
+    nav a { color: white !important; font-weight: 500; margin-left: 15px; text-decoration: none; font-size: 14px; }
     
-    /* Hero Section - Aesthetic Layout */
     .hero { max-width: 1050px; margin: 40px auto; padding: 20px; display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-    .hero-text h2 { font-size: 42px; color: var(--navy); margin-bottom: 15px; }
+    .hero-text h2 { font-size: 42px; color: var(--navy); margin-bottom: 15px; line-height: 1.2; }
     .hero-image { width: 100%; border-radius: 30px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); }
     
-    /* Elegant Button */
-    .btn { background: var(--soft-brown); color: white; padding: 15px 30px; border-radius: 50px; display: inline-block; font-weight: 600; margin-top: 20px; transition: 0.3s; }
-    .btn:hover { background: #8a624d; }
-
-    /* Features Grid */
+    .btn { background: var(--soft-brown); color: white; padding: 15px 30px; border-radius: 50px; display: inline-block; font-weight: 600; margin-top: 20px; text-decoration: none; }
+    
     .section { max-width: 1050px; margin: auto; padding: 60px 20px; }
     .grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }
     .card { background: white; padding: 30px; border-radius: 25px; box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
 
-    @media (max-width: 768px) { .hero { grid-template-columns: 1fr; } .grid { grid-template-columns: 1fr; } }
+    @media (max-width: 768px) { 
+      .hero { grid-template-columns: 1fr; } 
+      .grid { grid-template-columns: 1fr; }
+      .nav-container { flex-direction: column; gap: 10px; }
+    }
   </style>
 </head>
 <body>
@@ -41,7 +36,11 @@
   <header>
     <div class="nav-container">
       <h1>Academic Link PG</h1>
-      <nav><a href="index.html" style="color:white;">Home</a> | <a href="about.html" style="color:white;">About</a></nav>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="rooms.html">Rooms</a>
+      </nav>
     </div>
   </header>
 
